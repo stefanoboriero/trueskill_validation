@@ -22,4 +22,4 @@ To have a ground truth to evaluate our approach, for each model we run 50 games 
 
 ### Plotting
 To have a visual comprehension of everything, we condensed several plots into one that summurizes the outcome of the approach. The final plot will present the evolution of the skill estimation for both the basic baseline (on the bottom left) and for our approach (top left) as well as the difficulty level chosen at each time step. On the right side it will present, for each difficulty level, the win, draw and loss probabilities, following the same color code of the left side plots.  
-Those plots can be found under the /img/cumulative_plots folder
+Those plots can be found under the /img/cumulative_plots/with_baseline folder
