@@ -3,9 +3,13 @@ import sqlite3
 
 class DatabaseManager(object):
     
-    def __init__(self):
-        self.database_path = './data/trueskillDB.db'
+    def __init__(self, baseline=False):
+        if baseline:
+            self.database_path = './data/trueskill_baseline_DB.db'
+        else:
+            self.database_path = './data/trueskillDB.db'
         self.create_database()
+        self.baseline=baseline
 
 
     def create_database(self):

@@ -3,8 +3,11 @@ import sqlite3
 
 class Dumper(object):
 
-    def __init__(self):
-        self.db_path = './data/trueskillDB.db'
+    def __init__(self, baseline=False):
+        if baseline:
+            self.db_path = './data/trueskill_baseline_DB.db'
+        else:    
+            self.db_path = './data/trueskillDB.db'
         
     def get_player(self, name, surname):
         conn = sqlite3.connect(self.db_path)
